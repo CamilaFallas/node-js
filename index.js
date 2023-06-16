@@ -7,7 +7,12 @@ fetchPokemon(5);
 getPokemon(25);
 
 //4
-
+try {
+  const pokemon = formatPokemon(nombre, tipo1, tipo2);
+  console.log(pokemon);
+} catch (error) {
+  console.error(error);
+}
 
 //5
 
@@ -18,9 +23,6 @@ try {
 } catch (error) {
   console.error(error.message);
 }
-
-//7
-
 
 //8
 writeToFile("¡Hola, mundo!");
